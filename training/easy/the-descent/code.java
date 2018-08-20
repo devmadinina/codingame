@@ -16,14 +16,25 @@ class Player {
 
         // game loop
         while (true) {
+
+            int mountainToShoot = 0;       // Index of the mountain to erase
+            int mountainHmax    = 0;       // Height of the higher mountain
+
             for (int i = 0; i < 8; i++) {
                 int mountainH = in.nextInt(); // represents the height of one mountain.
+
+                //If a higher mountain is found, the size is updated
+                if (mountainH > mountainHmax) {
+                    mountainHmax = mountainH;
+                    mountainToShoot = i;
+                }
+
             }
 
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
 
-            System.out.println("4"); // The index of the mountain to fire on.
+            System.out.println(mountainToShoot); // Updated : the index of the mountain to fire on.
         }
     }
 }
