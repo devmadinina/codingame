@@ -13,12 +13,17 @@ Sauvegardes de mes solutions aux défis de [CodinGame](https://www.codingame.com
 
 ## Installation
 
+### Linux
+
+* via ssh
 ```sh
+PROJECT="codingame"
 BRANCH="master"
-[ ! -z "${BRANCH}" ] && git clone git@github.com:devmadinina/codingame.git -b ${BRANCH} codingame/codingame.${BRANCH}
-
-
-# Or
-[ ! -z "${BRANCH}" ] && git clone https://github.com/devmadinina/codingame -b ${BRANCH} codingame/codingame.${BRANCH}
+[ ! -z "${BRANCH}" ] && [ ! -z "${PROJECT}" ] && git clone git@github.com:devmadinina/${PROJECT}.git -b ${BRANCH} ${PROJECT}/${PROJECT}.${BRANCH}
 ```
-
+ * via https
+```sh
+PROJECT="codingame"
+BRANCH="master"
+[ ! -z "${BRANCH}" ] && [ ! -z "${PROJECT}" ] && git clone https://github.com/devmadinina/${PROJECT} -b ${BRANCH} ${PROJECT}/${PROJECT}.${BRANCH}
+```
