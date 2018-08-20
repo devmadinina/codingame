@@ -21,10 +21,19 @@ class Player {
 
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
-
-
+            
             // You have to output a correct ship name to shoot ("Buzz", enemy1, enemy2, ...)
-            System.out.println("name of the enemy");
+            //System.out.println("name of the enemy");
+
+            // Begin : My code
+            if (dist1 < dist2) {
+                System.out.println(enemy1);
+            } else {
+                System.out.println(enemy2);
+            }
+            // End : My code
+
+
         }
     }
 }
