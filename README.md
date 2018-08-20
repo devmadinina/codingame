@@ -15,6 +15,10 @@ Sauvegardes de mes solutions aux défis de [CodinGame](https://www.codingame.com
 
 ```sh
 BRANCH="master"
+[ ! -z "${BRANCH}" ] && git clone git@github.com:devmadinina/codingame.git -b ${BRANCH} codingame/codingame.${BRANCH}
+
+
+# Or
 [ ! -z "${BRANCH}" ] && git clone https://github.com/devmadinina/codingame -b ${BRANCH} codingame/codingame.${BRANCH}
 ```
 
